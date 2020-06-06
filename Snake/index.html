@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <style>
+        html{
+            background-color: rgb(240, 240, 240);
+        }
+        #screen td{
+            width: 5px;
+            height: 5px;
+            margin: 1px;
+            padding: 0;
+            background-color: rgb(200, 200, 200);
+        }
+        #screen tr{
+            margin: 0;
+            padding: 0;
+        }
+        #menuBar{
+            display: flex;
+        }
+        #score{
+            width: 50px;
+            height: 20px;
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, .3);
+            text-align: center;
+            line-height: 20px;
+            padding: 0;
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div id="menuBar">
+        <button onclick="snake.start()">Start</button>
+        <button onclick="snake.stop()">Stop</button>
+        <div class='box' id="score">0</div>
+    </div>
+    <table>
+        <tbody id="screen">
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script src="./index.js"></script>
+</html>
