@@ -1,5 +1,5 @@
 var config = {
-    speed: 50,
+    speed: 52,
     preyColor: 'red',
     snakeColor: 'green',
     screenWidth: 30,
